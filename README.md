@@ -43,3 +43,24 @@ def question_generator():
 
 
 question_generator()
+
+people_list = [
+
+     {"name":"michael",
+      "eyes":"black",
+      "hair":"brown",
+    },
+
+
+    {"name": "jan",
+     "eyes": "blue",
+     "hair": "blonde"
+    }
+
+]
+# print(people_list[0]["name"])
+
+
+for people in people_list:
+    if people_list[people]["eyes"] == 'blue':
+        print(people_list[people]["name"])
