@@ -44,23 +44,54 @@ def question_generator():
 
 question_generator()
 
-people_list = [
 
-     {"name":"michael",
-      "eyes":"black",
-      "hair":"brown",
-    },
+people_dict ={
+    "Michael":
+        {"gender": "male", "eye_color": "blue", "hair_color": "blonde", "race": "white", "facial_hair": "none", "jewelry": "glasses"},
+    "James":
+        {"gender": "male", "eye_color": "green", "hair_color": "black", "race": "black", "facial_hair": "mustache", "jewelry": "none"},
+    "Oscar":
+        {"gender": "male", "eye_color": "brown", "hair_color": "brown", "race": "hispanic", "facial_hair": "beard", "jewelry": "none"},
+    "Fred":
+        {"gender": "male", "eye_color": "blue", "hair_color": "black", "race": "asian", "facial_hair": "none", "jewelry": "none"},
+    "Steve":
+        {"gender": "male", "eye_color": "green", "hair_color": "grey", "race": "white", "facial_hair": "mustache", "jewelry": "none"},
+    "Ace":
+        {"gender": "male", "eye_color": "brown", "hair_color": "black", "race": "black", "facial_hair": "beard", "jewelry": "glasses"},
+    "Bill":
+        {"gender": "male", "eye_color": "blue", "hair_color": "red", "race": "white", "facial_hair": "none", "jewelry": "none"},
+    "Juan":
+        {"gender": "male", "eye_color": "green", "hair_color": "brown", "race": "hispanic", "facial_hair": "mustache", "jewelry": "none"},
+    "Brian":
+        {"gender": "male", "eye_color": "brown", "hair_color": "blonde", "race": "black", "facial_hair": "beard", "jewelry": "none"},
+    "Bruce":
+        {"gender": "male", "eye_color": "brown", "hair_color": "grey", "race": "asian", "facial_hair": "none", "jewelry": "glasses"},
+    "Eliza":
+        {"gender": "female", "eye_color": "brown", "hair_color": "grey", "race": "hispanic", "facial_hair": "none", "jewelry": "glasses"},
+    "Faith":
+        {"gender": "female", "eye_color": "brown", "hair_color": "black", "race": "black", "facial_hair": "none", "jewelry": "necklace"},
+    "Sally":
+        {"gender": "female", "eye_color": "blue", "hair_color": "blonde", "race": "white", "facial_hair": "none", "jewelry": "ear rings"},
+    "Maria":
+        {"gender": "female", "eye_color": "brown", "hair_color": "brown", "race": "hispanic", "facial_hair": "none", "jewelry": "none"},
+    "Linnie":
+        {"gender": "female", "eye_color": "blue", "hair_color": "brown", "race": "asian", "facial_hair": "none", "jewelry": "glasses"},
+    "Cheri":
+        {"gender": "female", "eye_color": "green", "hair_color": "blonde", "race": "white", "facial_hair": "none", "jewelry": "ear rings"},
+    "Ashley":
+        {"gender": "female", "eye_color": "brown", "hair_color": "black", "race": "black", "facial_hair": "none", "jewelry": "necklace"},
+    "Emily":
+        {"gender": "female", "eye_color": "blue", "hair_color": "black", "race": "asian", "facial_hair": "none", "jewelry": "glasses"},
+    "Bianca":
+        {"gender": "female", "eye_color": "green", "hair_color": "grey", "race": "black", "facial_hair": "none", "jewelry": "none"},
+    "Alice":
+        {"gender": "female", "eye_color": "blue", "hair_color": "red", "race": "white", "facial_hair": "none", "jewelry": "glasses"}
+}
+
+for key, value in people_dict.items():
+    if  people_dict[key]["jewelry"] == "glasses":
+        print(key)
 
 
-    {"name": "jan",
-     "eyes": "blue",
-     "hair": "blonde"
-    }
-
-]
-# print(people_list[0]["name"])
 
 
-for people in people_list:
-    if people_list[people]["eyes"] == 'blue':
-        print(people_list[people]["name"])
